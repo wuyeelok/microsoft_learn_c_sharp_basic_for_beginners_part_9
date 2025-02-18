@@ -3,18 +3,15 @@ var part = "Part 9";
 Console.WriteLine($"Hello, World! {part}");
 
 int a = 5;
-int b = 1;
-
-
-int c = a + b;
-
-bool isGreaterThan10 = c > 10; // will be true or false
-
-if (isGreaterThan10) // true
+int b = 3;
+int c = 4;
+if ((a + b + c > 10) && (a == b))
 {
-    Console.WriteLine("The sum is greater than 10.");
+    Console.WriteLine("The answer is greater than 10");
+    Console.WriteLine("And the first number is equal to the second");
 }
-else // false
+else
 {
-    Console.WriteLine("The sum is not greater than 10.");
+    Console.WriteLine("The answer is not greater than 10");
+    Console.WriteLine("Or the first number is not equal to the second");
 }
